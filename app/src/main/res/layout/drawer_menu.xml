@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+
+        >
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/_20sdp"
+            android:src="@drawable/profile"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="@dimen/_15sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_5sdp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Sunita Chowdhury"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#8A000000"
+                android:textSize="@dimen/_9sdp"
+                android:text="chowdhurysunita.1610@gmail.com" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/capsuleshape"
+
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/label_bg"
+        >
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/home"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:scaleType="fitXY"
+        android:gravity="left|center"
+        android:layout_gravity="center|left"
+        >
+    </ImageView>
+    <TextView
+        android:id="@+id/homeid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Home"
+        android:textSize="15sp"
+        android:textColor="#000"
+
+        android:gravity="left|center"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+</LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/profilelinearlayoutid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/capsuleshape"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/userprofile"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="fitXY"
+            android:gravity="left|center"
+            android:layout_gravity="center|left"
+            >
+
+        </ImageView>
+        <TextView
+            android:id="@+id/myprofileid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Profile"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+
+            android:gravity="left|center"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/change_passwordid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="@drawable/capsuleshape"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/password"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="left|center"
+            android:layout_gravity="center|left"
+            >
+
+        </ImageView>
+        <TextView
+            android:id="@+id/aboutusid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Change Password"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:checkable="true"
+            android:textStyle="bold"
+
+            android:gravity="left|center"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/capsuleshape"
+        >
+       <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/query"
+            android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"
+           android:scaleType="fitXY"
+           android:gravity="left|center"
+           android:layout_gravity="center|left"
+            >
+
+        </ImageView>
+        <TextView
+            android:id="@+id/contactusid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Query"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+
+            android:checkable="true"
+            android:gravity="left|center"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/loginlinearlayoutid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/capsuleshape"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/review"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitXY"
+            android:layout_marginRight="15dp"
+            android:gravity="left|center"
+            android:layout_gravity="center|left"
+            >
+
+        </ImageView>
+        <TextView
+            android:id="@+id/loginid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Review"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+
+            android:gravity="left|center"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/parent_counseling_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/capsuleshape"
+            >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/parentscounseling"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitXY"
+                android:layout_marginRight="15dp"
+                android:gravity="left|center"
+                android:layout_gravity="center|left"
+                >
+
+            </ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Parent Counselling"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+
+                android:gravity="left|center"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/capsuleshape"
+            >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/share"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitXY"
+                android:layout_marginRight="15dp"
+                android:gravity="left|center"
+                android:layout_gravity="center|left"
+                >
+
+            </ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Share"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+
+                android:gravity="left|center"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/logoutid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/capsuleshape"
+            >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/logout"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitXY"
+                android:layout_marginRight="15dp"
+                android:gravity="left|center"
+                android:layout_gravity="center|left"
+                >
+
+            </ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Logout"
+                android:textSize="15sp"
+                android:textColor="#EA0D0D"
+                android:textStyle="bold"
+                android:gravity="left|center"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

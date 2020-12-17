@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.StudentOTPActivity.StudentOTPActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg1"
+        android:orientation="vertical"
+        android:weightSum="2.3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:src="@drawable/logo"
+                android:layout_gravity="center"
+
+                >
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/formbg"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:orientation="vertical"
+                android:weightSum="2.4"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="bottom"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Enter"
+                                android:fontFamily="@font/cerebrisansprobold"
+                                android:textSize="20sp"
+                                android:layout_gravity="right"
+                                android:gravity="right"
+                                android:textColor="#000"
+                                android:layout_marginRight="5dp"
+                                android:textStyle="bold"
+                                >
+
+                            </TextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="OTP"
+                                android:fontFamily="@font/cerebrisansprobold"
+                                android:textSize="20sp"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:textColor="#E60808"
+                                android:textStyle="bold"
+                                >
+
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:weightSum="6"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="bottom"
+                        >
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="@dimen/_7sdp"
+                            android:elevation="@dimen/_15sdp"
+                            app:cardMaxElevation="@dimen/_10sdp"
+                            app:cardElevation="@dimen/_10sdp"
+                            android:layout_marginRight="7dp"
+                            android:layout_marginLeft="10dp">
+
+                            <EditText
+                                android:id="@+id/etotpno1id"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:inputType="number"
+
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                            </EditText>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="@dimen/_7sdp"
+                            android:elevation="@dimen/_15sdp"
+                            app:cardMaxElevation="@dimen/_10sdp"
+                            app:cardElevation="@dimen/_10sdp"
+                            android:layout_marginRight="7dp"
+                            android:layout_marginLeft="7dp"
+                            >
+
+                            <EditText
+                                android:id="@+id/etotpno2id"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:inputType="number"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                            </EditText>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="@dimen/_7sdp"
+                            android:elevation="@dimen/_15sdp"
+                            app:cardMaxElevation="@dimen/_10sdp"
+
+                            app:cardElevation="@dimen/_10sdp"
+                            android:layout_marginRight="7dp"
+                            android:layout_marginLeft="7dp"
+                            >
+                            <EditText
+                                android:id="@+id/etotpno3id"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:inputType="number"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                            </EditText>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="@dimen/_7sdp"
+                            android:elevation="@dimen/_15sdp"
+                            app:cardMaxElevation="@dimen/_10sdp"
+
+                            app:cardElevation="@dimen/_10sdp"
+                            android:layout_marginRight="7dp"
+                            android:layout_marginLeft="7dp"
+                            >
+                            <EditText
+                                android:id="@+id/etotpno4id"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:inputType="number"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                            </EditText>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="@dimen/_7sdp"
+                            android:elevation="@dimen/_15sdp"
+                            app:cardMaxElevation="@dimen/_10sdp"
+
+                            app:cardElevation="@dimen/_10sdp"
+                            android:layout_marginRight="7dp"
+                            android:layout_marginLeft="7dp"
+                            >
+                            <EditText
+                                android:id="@+id/etotpno5id"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:inputType="number"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                            </EditText>
+                        </androidx.cardview.widget.CardView>
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="@dimen/_7sdp"
+                            android:elevation="@dimen/_15sdp"
+                            app:cardMaxElevation="@dimen/_10sdp"
+                            app:cardElevation="@dimen/_10sdp"
+                            android:layout_marginRight="7dp"
+                            android:layout_marginLeft="10dp">
+
+                            <EditText
+                                android:id="@+id/etotpno6id"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:inputType="number"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                            </EditText>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/cardpasswordid"
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/_30sdp"
+                     android:background="@drawable/loginbutton"
+                     android:layout_marginTop="15dp"
+                     android:layout_marginRight="20dp"
+                     android:layout_marginLeft="20dp"
+                     android:visibility="gone"
+                     >
+                   <androidx.cardview.widget.CardView
+                         android:layout_width="match_parent"
+                         android:layout_height="45dp"
+                         app:cardCornerRadius="@dimen/_30sdp"
+                         android:layout_marginTop="15dp"
+                         android:layout_marginRight="20dp"
+                         android:layout_marginLeft="20dp"
+
+
+                         >
+                         <EditText
+                             android:id="@+id/etpasswordid"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:background="@android:color/transparent"
+                             android:hint="Enter your password"
+                             android:textStyle="bold"
+                             android:textSize="15sp"
+                             android:imeOptions="actionDone"
+                             android:gravity="center|left"
+                             android:layout_gravity="center"
+                             android:paddingLeft="@dimen/_20sdp"
+                             android:paddingRight="@dimen/_5sdp"
+                             android:inputType="numberPassword"
+                             android:singleLine="true"
+                             android:lines="1"
+                             >
+
+                         </EditText>
+
+                  </androidx.cardview.widget.CardView>
+                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:elevation="@dimen/_15sdp"
+                   >
+
+                        <TextView
+                            android:id="@+id/tvsubmmitid"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bluecapsulshapebutton"
+                            android:fontFamily="@font/rockfont"
+                            android:gravity="center"
+                            android:text="Submit"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:textStyle="normal">
+
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2">
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

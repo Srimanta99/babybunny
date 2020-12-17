@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.StudentHolidayActivity.Student_HolidayList_Activity"
+    android:orientation="vertical"
+    android:background="@drawable/bgholiday">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+     android:background="@drawable/whitecapsuleshape"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/backbuttn"
+              >
+
+            </ImageView>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/etphnoid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/rockfont"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:text="Holiday List     "
+                    android:textColor="#2C274F"
+
+                    android:textSize="@dimen/_20sdp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_30sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Holiday Name"
+            android:fontFamily="@font/rockfont"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="#2C274F"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Date"
+            android:fontFamily="@font/rockfont"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="#2C274F"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/_25sdp"
+            >
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/barred"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Good Friday"
+            android:fontFamily="@font/cerebrisansprobold"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tue,14thApr\n2020      "
+            android:fontFamily="@font/cerebrisansprobold"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="#fff"
+            android:layout_gravity="right|center"
+            android:gravity="right|center"
+            android:layout_marginRight="20dp"
+            >
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/barblue"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Durga Puja"
+            android:fontFamily="@font/cerebrisansprobold"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Fri,23rd Oct\n2020      "
+            android:fontFamily="@font/cerebrisansprobold"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="#fff"
+            android:layout_gravity="right|center"
+            android:gravity="right|center"
+            android:layout_marginRight="20dp"
+            >
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/baryellow"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Christmas Eve"
+            android:fontFamily="@font/cerebrisansprobold"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Fri,25 Dec\n2020      "
+            android:fontFamily="@font/cerebrisansprobold"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="#fff"
+            android:layout_gravity="right|center"
+            android:gravity="right|center"
+            android:layout_marginRight="20dp"
+            >
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
