@@ -4,15 +4,10 @@ import android.content.Intent;
 import android.view.View;
 
 import com.baby.bunny.student.management.R;
-import com.baby.bunny.student.management.screen.Fragment.ParentsZone.ParentZoneViewBind;
-import com.baby.bunny.student.management.screen.Fragment.ParentsZone.ParentsZoneFragment;
-import com.baby.bunny.student.management.screen.PdfActivity;
-import com.baby.bunny.student.management.screen.StudentCompanyAchievmentActivity.StudentCompanyAchievmentActivity;
-import com.baby.bunny.student.management.screen.StudentFeesBookAcivity.StudentFeesBookActivity;
-import com.baby.bunny.student.management.screen.StudentHolidayActivity.Student_HolidayList_Activity;
-import com.baby.bunny.student.management.screen.StudentQueryActivity.Student_Query_Activity;
-import com.baby.bunny.student.management.screen.StudentReviewActivity.StudentReviewActivity;
-import com.baby.bunny.student.management.screen.StudentTodaysClassActivity.StudentTodaysClass;
+import com.baby.bunny.student.management.VideoandAudioClipActivity.VideoandAudioClipActivity;
+import com.baby.bunny.student.management.screen.BlogsActivity.BlogsActivity;
+import com.baby.bunny.student.management.screen.DoAndDontsActivity.DoAndDoNotsActivity;
+import com.baby.bunny.student.management.screen.PdfActivity.PdfActivity;
 
 public class ParentCounselingOnClick implements View.OnClickListener{
     ParentCounselingFragment parentCounselingFragment;
@@ -26,6 +21,9 @@ public class ParentCounselingOnClick implements View.OnClickListener{
     // set click listner.
     private void setonclicklistner() {
         parentCounselingViewBind.pdfid.setOnClickListener(this);
+        parentCounselingViewBind.blogsid.setOnClickListener(this);
+        parentCounselingViewBind.videoclipsid.setOnClickListener(this);
+        parentCounselingViewBind.lvDoandDontsid.setOnClickListener(this);
 
     }
 
@@ -41,6 +39,22 @@ public class ParentCounselingOnClick implements View.OnClickListener{
             }
             break;
 
+            case R.id.blogsid:{
+                Intent intent=new Intent(parentCounselingFragment.getActivity(), BlogsActivity.class);
+                parentCounselingFragment.getActivity().startActivity(intent);
+            }
+           break;
+
+            case R.id.videoclipsid:{
+                Intent intent=new Intent(parentCounselingFragment.getActivity(), VideoandAudioClipActivity.class);
+                parentCounselingFragment.getActivity().startActivity(intent);
+            }
+            break;
+
+            case R.id.lvDoandDontsid:{
+                Intent intent=new Intent(parentCounselingFragment.getActivity(), DoAndDoNotsActivity.class);
+                parentCounselingFragment.getActivity().startActivity(intent);
+            }
 
         }
     }

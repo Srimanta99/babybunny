@@ -10,6 +10,7 @@ import com.baby.bunny.student.management.screen.StudentQueryActivity.Student_Que
 import com.baby.bunny.student.management.screen.StudentReviewActivity.StudentReviewActivity;
 import com.baby.bunny.student.management.screen.StudentFeesBookAcivity.StudentFeesBookActivity;
 import com.baby.bunny.student.management.screen.StudentTodaysClassActivity.StudentTodaysClass;
+import com.baby.bunny.student.management.screen.UpcomingEventActivity.UpcomingEventsActivity;
 
 public class ParentsZoneOnclick implements View.OnClickListener{
     ParentsZoneFragment parentsZoneFragment;
@@ -29,6 +30,7 @@ public class ParentsZoneOnclick implements View.OnClickListener{
         parentZoneViewBind.lvidCompanyAchievment.setOnClickListener(this);
         parentZoneViewBind.lvidTodaysClass.setOnClickListener(this);
         parentZoneViewBind.lvidCompanyAchievment.setOnClickListener(this);
+        parentZoneViewBind.lvupcomingeventsid.setOnClickListener(this);
     }
 
     @Override
@@ -71,6 +73,12 @@ public class ParentsZoneOnclick implements View.OnClickListener{
             case R.id.lvidTodaysClass:{
 
                 Intent intent=new Intent(parentsZoneFragment.getContext(), StudentTodaysClass.class);
+                parentsZoneFragment.startActivity(intent);
+            }
+            break;
+
+            case R.id.lvupcomingeventsid:{
+                Intent intent=new Intent(parentsZoneFragment.getContext(), UpcomingEventsActivity.class);
                 parentsZoneFragment.startActivity(intent);
             }
 

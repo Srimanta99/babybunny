@@ -17,7 +17,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Babybunny"
         android:usesCleartextTraffic="true">
-        <activity android:name=".screen.PdfActivity"></activity>
+        <activity android:name=".screen.PreSchoolActivity.PreSchoolActivity"></activity>
+        <activity android:name=".screen.DoAndDontsActivity.DoAndDoNotsActivity" />
+        <activity android:name=".screen.PdfActivity.PdfActivity" />
+        <activity android:name=".screen.UpcomingEventActivity.UpcomingEventsActivity" />
+        <activity android:name=".VideoandAudioClipActivity.VideoandAudioClipActivity" />
+        <activity android:name=".screen.BlogsActivity.BlogsActivity" />
         <activity android:name=".screen.StudentTodaysClassActivity.StudentTodaysClass" />
         <activity android:name=".screen.StudentCompanyAchievmentActivity.StudentCompanyAchievmentActivity" />
         <activity android:name=".screen.StudentFeesBookAcivity.StudentFeesBookActivity" />

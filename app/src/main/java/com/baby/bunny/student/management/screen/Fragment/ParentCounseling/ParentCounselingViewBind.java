@@ -11,7 +11,7 @@ public class ParentCounselingViewBind extends DeviceResolution {
     ParentCounselingFragment parentCounselingFragment;
     View view;
 
-    LinearLayout pdfid;
+    LinearLayout pdfid,blogsid,videoclipsid,lvDoandDontsid;
 
 
     public ParentCounselingViewBind(ParentCounselingFragment parentCounselingFragment, View view) {
@@ -31,6 +31,9 @@ public class ParentCounselingViewBind extends DeviceResolution {
     // for findview
     private void initviewBind() {
         pdfid=view.findViewById(R.id.pdfid);
+        blogsid=view.findViewById(R.id.blogsid);
+        videoclipsid=view.findViewById(R.id.videoclipsid);
+        lvDoandDontsid=view.findViewById(R.id.lvDoandDontsid);
 
     }
 }

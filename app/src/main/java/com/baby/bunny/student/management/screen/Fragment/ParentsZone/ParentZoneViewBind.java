@@ -12,7 +12,7 @@ public class ParentZoneViewBind extends DeviceResolution {
     ParentsZoneFragment parentsZoneFragment;
     View view;
 
-    LinearLayout lvidattendance,lvidholidaylist,lvidquery,lvidreview,lvidfeesbook,lvidCompanyAchievment,lvidTodaysClass;
+    LinearLayout lvidattendance,lvidholidaylist,lvidquery,lvidreview,lvidfeesbook,lvidCompanyAchievment,lvidTodaysClass,lvupcomingeventsid;
 
 
     public ParentZoneViewBind(ParentsZoneFragment parentsZoneFragment, View view) {
@@ -38,5 +38,6 @@ public class ParentZoneViewBind extends DeviceResolution {
         lvidfeesbook=view.findViewById(R.id.lvidfeesbook);
         lvidCompanyAchievment=view.findViewById(R.id.lvidCompanyAchievment);
         lvidTodaysClass=view.findViewById(R.id.lvidTodaysClass);
+        lvupcomingeventsid=view.findViewById(R.id.lvupcomingeventsid);
     }
 }
