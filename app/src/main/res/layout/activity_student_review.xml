@@ -217,7 +217,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:background="@drawable/bluecapsulshapebutton"
+                        android:background="@drawable/redcapsulshapebutton"
                         android:fontFamily="@font/rockfont"
                         android:gravity="center"
                         android:text="Submit"

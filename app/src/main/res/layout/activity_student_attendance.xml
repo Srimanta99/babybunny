@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.StudentAttendanceActivity.StudentAttendanceActivity"
+    android:background="@drawable/loginasbg"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="@dimen/_15sdp"
+        android:background="@drawable/whitecapsuleshape"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/backbuttn"
+                >
+
+            </ImageView>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/etphnoid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/rockfont"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:text="Attendance      "
+                    android:textColor="#2C274F"
+                    android:textSize="@dimen/_20sdp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/callendarbg"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_25sdp">
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_15sdp"
+            app:mcv_selectionColor="#20bbf1"
+            app:mcv_arrowColor="#2C274F"
+            app:mcv_showOtherDates="all"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Present : 0"
+        android:fontFamily="@font/rockfont"
+        android:background="@drawable/bluecapsulshapebutton"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        >
+
+    </TextView>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+        <TextView
+            android:id="@+id/tvsubmmitid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Absent : 0"
+            android:fontFamily="@font/rockfont"
+            android:background="@drawable/redcapsulshapebutton"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            >
+
+        </TextView>
+    </RelativeLayout>
+
+
+</LinearLayout>
+

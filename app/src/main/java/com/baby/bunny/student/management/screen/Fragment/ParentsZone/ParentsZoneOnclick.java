@@ -4,12 +4,14 @@ import android.content.Intent;
 import android.view.View;
 
 import com.baby.bunny.student.management.R;
+import com.baby.bunny.student.management.screen.StudentAttendanceActivity.StudentAttendanceActivity;
 import com.baby.bunny.student.management.screen.StudentCompanyAchievmentActivity.StudentCompanyAchievmentActivity;
 import com.baby.bunny.student.management.screen.StudentHolidayActivity.Student_HolidayList_Activity;
 import com.baby.bunny.student.management.screen.StudentQueryActivity.Student_Query_Activity;
 import com.baby.bunny.student.management.screen.StudentReviewActivity.StudentReviewActivity;
 import com.baby.bunny.student.management.screen.StudentFeesBookAcivity.StudentFeesBookActivity;
 import com.baby.bunny.student.management.screen.StudentTodaysClassActivity.StudentTodaysClass;
+
 import com.baby.bunny.student.management.screen.UpcomingEventActivity.UpcomingEventsActivity;
 
 public class ParentsZoneOnclick implements View.OnClickListener{
@@ -31,6 +33,7 @@ public class ParentsZoneOnclick implements View.OnClickListener{
         parentZoneViewBind.lvidTodaysClass.setOnClickListener(this);
         parentZoneViewBind.lvidCompanyAchievment.setOnClickListener(this);
         parentZoneViewBind.lvupcomingeventsid.setOnClickListener(this);
+        parentZoneViewBind.lvidattendance.setOnClickListener(this);
     }
 
     @Override
@@ -81,7 +84,11 @@ public class ParentsZoneOnclick implements View.OnClickListener{
                 Intent intent=new Intent(parentsZoneFragment.getContext(), UpcomingEventsActivity.class);
                 parentsZoneFragment.startActivity(intent);
             }
-
+            break;
+            case R.id.lvidattendance:{
+                Intent intent=new Intent(parentsZoneFragment.getContext(), StudentAttendanceActivity.class);
+                parentsZoneFragment.startActivity(intent);
+            }
         }
     }
 }

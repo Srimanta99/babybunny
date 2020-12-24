@@ -9,6 +9,7 @@ import com.baby.bunny.student.management.screen.BlogsActivity.BlogsActivity;
 import com.baby.bunny.student.management.screen.DoAndDontsActivity.DoAndDoNotsActivity;
 import com.baby.bunny.student.management.screen.PdfActivity.PdfActivity;
 
+
 public class ParentCounselingOnClick implements View.OnClickListener{
     ParentCounselingFragment parentCounselingFragment;
     ParentCounselingViewBind parentCounselingViewBind;

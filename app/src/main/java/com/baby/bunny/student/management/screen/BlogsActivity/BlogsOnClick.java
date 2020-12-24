@@ -4,8 +4,9 @@ import android.content.Intent;
 import android.view.View;
 
 import com.baby.bunny.student.management.R;
-import com.baby.bunny.student.management.screen.PreSchoolActivity.PreSchoolActivity;
+
 import com.baby.bunny.student.management.screen.StudentLoginActivity.StudentLoginActivity;
+import com.baby.bunny.student.management.screen.StudentPreSchoolActivity.PreSchoolActivity;
 import com.baby.bunny.student.management.screen.main.MainActivity;
 import com.baby.bunny.student.management.screen.main.MainActivityViewBind;
 

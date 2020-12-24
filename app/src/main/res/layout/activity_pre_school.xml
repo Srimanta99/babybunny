@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".screen.PreSchoolActivity.PreSchoolActivity"
+    tools:context=".screen.StudentPreSchoolActivity.PreSchoolActivity"
     android:orientation="vertical"
     android:background="@drawable/loginasbg">
 
@@ -44,12 +44,11 @@
                     android:fontFamily="@font/rockfont"
                     android:gravity="center"
                     android:imeOptions="actionDone"
-                    android:text="Why preschool is so important for your kids"
+                    android:text="Why preschool is so important \nfor your kids"
                     android:textColor="#2C274F"
-                    android:textSize="@dimen/_15sdp"
-                    android:textStyle="bold"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="normal"
+
                     >
 
                 </TextView>
@@ -59,5 +58,82 @@
 
     </LinearLayout>
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_20sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/banner">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Myths about preschool Education"
+                            android:fontFamily="@font/rockfont"
+                            android:textColor="#2C274F"
+                            android:gravity="center"
+                            android:textSize="@dimen/_16sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            >
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/preschool"
+                            android:gravity="center"
+                            android:textColor="#2C274F"
+                            android:textSize="@dimen/_12sdp"
+                            android:fontFamily="@font/cerebrisansprobold"
+                            android:textStyle="normal"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
 
 </LinearLayout>

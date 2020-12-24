@@ -1,8 +1,8 @@
-package com.baby.bunny.student.management.screen.PreSchoolActivity;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.baby.bunny.student.management.screen.StudentPreSchoolActivity;
 
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.baby.bunny.student.management.R;
 
