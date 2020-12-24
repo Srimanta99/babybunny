@@ -1,10 +1,18 @@
 package com.baby.bunny.student.management.screen.StudentAttendanceActivity;
 
+import android.content.Context;
+import android.graphics.Color;
+import android.graphics.Typeface;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.RelativeSizeSpan;
+import android.text.style.StyleSpan;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -13,26 +21,32 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.baby.bunny.student.management.R;
+import com.prolificinteractive.materialcalendarview.CalendarDay;
+import com.prolificinteractive.materialcalendarview.DayViewDecorator;
+import com.prolificinteractive.materialcalendarview.DayViewFacade;
+import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 
 
 import java.util.Calendar;
+import java.util.Collection;
+import java.util.Date;
+import java.util.HashSet;
 import java.util.Map;
 
 public class StudentAttendanceActivity extends AppCompatActivity {
-//MaterialCalendarView calendarid;
+MaterialCalendarView calendarid;
 int year,month,day;
-
+CalendarDay date;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_attendance);
+        calendarid = findViewById(R.id.calendarid);
 
-     //   calendarid = findViewById(R.id.calendarid);
 
-
-       /* calendarid.state().edit()
+      /*  calendarid.state().edit()
                 .setFirstDayOfWeek(Calendar.MONDAY)
                 .setMinimumDate(CalendarDay.from(1900, 1, 1))
                 .setMaximumDate(CalendarDay.from(2100, 12, 31))
@@ -49,6 +63,8 @@ int year,month,day;
 
             }
         });*/
+
+
     }
 
 

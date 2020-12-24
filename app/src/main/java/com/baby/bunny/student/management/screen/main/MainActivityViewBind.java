@@ -10,7 +10,7 @@ import com.rts.commonutils_2_0.deviceinfo.DeviceResolution;
 public class MainActivityViewBind extends DeviceResolution {
     MainActivity mainActivity;
     View view;
-    LinearLayout studentlvid;
+    LinearLayout studentlvid,lvcentermanagerid;
 
     public MainActivityViewBind(MainActivity mainActivity, View view) {
         super(mainActivity);
@@ -29,6 +29,7 @@ public class MainActivityViewBind extends DeviceResolution {
     // for findview
     private void initviewBind() {
         studentlvid=view.findViewById(R.id.studentlvid);
+        lvcentermanagerid=view.findViewById(R.id.lvcentermanagerid);
        // btn_hello_wrold=view.findViewById(R.id.btn_hello_wrold) ;
     }
 }

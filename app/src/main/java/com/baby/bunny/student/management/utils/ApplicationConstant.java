@@ -7,4 +7,9 @@ public class ApplicationConstant {
     public static String loginwithphnourl=url+"usercheck";
     public static String studentotpurl=url+"getotp";
     public static String studentOTP_Passwordurl=url+"login";
+
+    public static String centermanagerurl="http://babybunny.in/babybunny/App/Center_admin/";
+    public static String CenterManager_getAllStudent=centermanagerurl+"getAllStudent";
+    public static String CenterManager_getAllTeacher=centermanagerurl+"getAllTeacher";
+    public static String CenterManager_getAllClass=centermanagerurl+"getAllClass";
 }

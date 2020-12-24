@@ -68,15 +68,18 @@
         <com.prolificinteractive.materialcalendarview.MaterialCalendarView
             android:id="@+id/calendarid"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:padding="@dimen/_15sdp"
             app:mcv_selectionColor="#20bbf1"
             app:mcv_arrowColor="#2C274F"
+            app:mcv_headerTextAppearance="@style/TextAppearance.MyCustomhearder"
             app:mcv_showOtherDates="all"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-
-
+            app:mcv_dateTextAppearance="@style/TextAppearance.MyCustomDate"
+            app:mcv_weekDayTextAppearance="@style/TextAppearance.MyCustomDay"
+            app:mcv_rightArrowMask="@drawable/right"
+            app:mcv_firstDayOfWeek="monday"
             />
+
     </LinearLayout>
 
     <LinearLayout

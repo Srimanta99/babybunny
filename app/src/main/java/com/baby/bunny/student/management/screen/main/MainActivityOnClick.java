@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.view.View;
 
 import com.baby.bunny.student.management.R;
+import com.baby.bunny.student.management.screen.CenterManagerHomeActivity.CenterManagerHomeActivity;
 import com.baby.bunny.student.management.screen.StudentLoginActivity.StudentLoginActivity;
 
 public class MainActivityOnClick implements View.OnClickListener{
@@ -18,6 +19,7 @@ public class MainActivityOnClick implements View.OnClickListener{
     // set click listner.
     private void setonclicklistner() {
         mainActivityViewBind.studentlvid.setOnClickListener(this);
+        mainActivityViewBind.lvcentermanagerid.setOnClickListener(this);
     }
 
     @Override
@@ -28,6 +30,15 @@ public class MainActivityOnClick implements View.OnClickListener{
                 Intent mainIntent = new Intent(mainActivity, StudentLoginActivity.class);
                 mainActivity.startActivity(mainIntent);
               //  mainActivity.finish();
+            }
+            break;
+
+
+            case R.id.lvcentermanagerid:{
+                // Toast.makeText(mainActivity,"hello",Toast.LENGTH_LONG).show();
+                Intent mainIntent = new Intent(mainActivity, CenterManagerHomeActivity.class);
+                mainActivity.startActivity(mainIntent);
+                //  mainActivity.finish();
             }
             break;
         }
