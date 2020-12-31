@@ -97,7 +97,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_150sdp"
+                android:layout_height="@dimen/_140sdp"
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 >
@@ -129,13 +129,14 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:textSize="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
                         >
 
                     </TextView>
 
                 </LinearLayout>
                 <LinearLayout
-                    android:id="@+id/lvidholidaylist"
+                    android:id="@+id/lvstudentsfeesid"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -161,6 +162,7 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:textSize="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
                         >
 
                     </TextView>
@@ -172,13 +174,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_150sdp"
+                android:layout_height="@dimen/_140sdp"
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 >
 
                 <LinearLayout
-                    android:id="@+id/lvidquery"
+                    android:id="@+id/lvidhometask"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -204,13 +206,14 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:textSize="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
                         >
 
                     </TextView>
 
                 </LinearLayout>
                 <LinearLayout
-                    android:id="@+id/lvidTodaysClass"
+                    android:id="@+id/lvidholidaylist"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -237,6 +240,7 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:textSize="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
                         >
 
                     </TextView>
@@ -246,6 +250,84 @@
 
             </LinearLayout>
 
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lvidtoday"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/div7"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@drawable/a"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_40sdp"
+                        >
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Today'\nInnovation"
+                        android:fontFamily="@font/rockfont"
+                        android:textColor="#fff"
+                        android:textStyle="normal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lvidFeedbacklist"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/div8"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@drawable/company"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        >
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Feedback List"
+                        android:fontFamily="@font/rockfont"
+                        android:textColor="#fff"
+                        android:textStyle="normal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        >
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
 
 
 

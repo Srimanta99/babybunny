@@ -17,7 +17,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Babybunny"
         android:usesCleartextTraffic="true">
-        <activity android:name=".screen.CenterClassActivity.CenterClassActivity"></activity>
+        <activity android:name=".screen.CenterFeedbacklistActivity.CenterFeedbacklistActivity"></activity>
+        <activity android:name=".screen.CenterTodayActivity.CenterTodayActivity" />
+        <activity android:name=".screen.CenterHomeTaskActivity.CenterHomeTaskActivity" />
+        <activity android:name=".screen.CenterStudentsFeesActivity.CenterStudentsFeesActivity" />
+        <activity android:name=".screen.CenterManagerOtpActivity.CenterManagerOtpActivity" />
+        <activity android:name=".screen.CenterManagerLoginActivity.CenterManagerLoginActivity" />
+        <activity android:name=".screen.CenterHolidayListActivity.CenterHolidayListActivity" />
+        <activity android:name=".screen.CenterClassActivity.CenterClassActivity" />
         <activity android:name=".screen.CenterTeacherActivity.CenterTeacherActivity" />
         <activity android:name=".screen.CenterStudentActivity.CenterStudentActivity" />
         <activity android:name=".screen.CenterManagerHomeActivity.CenterManagerHomeActivity" />

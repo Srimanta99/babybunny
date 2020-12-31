@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:overScrollMode="never"
+    android:layout_marginTop="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:fitsSystemWindows="true"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="@dimen/_20sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/search"
+                android:layout_marginLeft="9dp"
+                >
+
+            </ImageView>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                     android:text="Search"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/rockfont"
+                    android:textSize="17sp"
+                    android:imeOptions="actionDone"
+                    android:gravity="center|left"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/_9sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textColor="#000"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:lines="1"
+                    >
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/asscolor_round"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="@dimen/_20sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+                <TextView
+                    android:id="@+id/select_calender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="Select Year / Month"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/rockfont"
+                    android:textSize="14sp"
+                    android:gravity="center|left"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:drawableRight="@drawable/calendar"
+                    >
+                </TextView>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinnerstyle"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_18sdp"
+        >
+        <Spinner
+            android:id="@+id/select_type_spinnerid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:popupBackground="@drawable/blue_outline_white_background"
+
+            >
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinnerstyle"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_18sdp"
+        >
+        <Spinner
+            android:id="@+id/select_class_spinnerid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:popupBackground="@drawable/blue_outline_white_background"
+
+            >
+        </Spinner>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Student"
+        android:fontFamily="@font/rockfont"
+        android:textColor="#000"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_15sdp">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_round"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/select_student_rv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_marginRight="@dimen/_20sdp"
+        >
+        <LinearLayout
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tvSearchid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/redcapsulshapebutton"
+                android:fontFamily="@font/rockfont"
+                android:gravity="center"
+                android:text="Search"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="normal">
+
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+
+
+

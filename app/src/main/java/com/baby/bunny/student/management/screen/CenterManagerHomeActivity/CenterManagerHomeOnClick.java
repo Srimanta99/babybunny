@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.baby.bunny.student.management.R;
+import com.baby.bunny.student.management.screen.CenterManagerLoginActivity.CenterManagerLoginActivity;
 import com.baby.bunny.student.management.screen.Fragment.ChangePassword.ChangePasswordFragment;
 import com.baby.bunny.student.management.screen.Fragment.ParentCounseling.ParentCounselingFragment;
 import com.baby.bunny.student.management.screen.Fragment.ParentsZone.ParentsZoneFragment;
@@ -37,7 +38,7 @@ public class CenterManagerHomeOnClick extends StudentHomeActivity implements Vie
     public void setonclicklistner() {
         centerManagerHomeViewBind.homeid.setOnClickListener(this);
         centerManagerHomeViewBind.menuIcon.setOnClickListener(this);
-
+          centerManagerHomeViewBind.logoutid.setOnClickListener(this);
 
     }
 
@@ -64,7 +65,14 @@ public class CenterManagerHomeOnClick extends StudentHomeActivity implements Vie
                 centerManagerHomeViewBind.drawer.openDrawer(Gravity.LEFT);
                 break;
 
+            case R.id.logoutid:
 
+                SessionManager.setCenterManagerLogged(false);
+                closeDrawer();
+                centerManagerHomeActivity.startActivity(new Intent(centerManagerHomeActivity, CenterManagerLoginActivity.class));
+                finish();
+
+                break;
         }
     }
 

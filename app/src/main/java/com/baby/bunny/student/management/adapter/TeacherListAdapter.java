@@ -13,6 +13,8 @@ import com.baby.bunny.student.management.R;
 import com.baby.bunny.student.management.model.StudentsListModel;
 import com.baby.bunny.student.management.model.TeacherListModel;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -21,6 +23,7 @@ public class TeacherListAdapter extends RecyclerView.Adapter<TeacherListAdapter.
     LayoutInflater layoutInflater;
     Context context;
     List<TeacherListModel> teacherListModels;
+    String date;
 
     public TeacherListAdapter(Context context, List<TeacherListModel> teacherListModels) {
         this.context = context;
@@ -41,12 +44,18 @@ public class TeacherListAdapter extends RecyclerView.Adapter<TeacherListAdapter.
         TeacherListModel teacherListModelposition=teacherListModels.get(position);
 
 
-        holder.teacher_name.setText(teacherListModelposition.getTeacher_name());
-        holder.teacher_id.setText(teacherListModelposition.getTeacher_id());
+        holder.teacher_name.setText("  "+teacherListModelposition.getTeacher_name());
+        holder.teacher_id.setText("  "+"("+teacherListModelposition.getTeacher_id()+")");
         holder.blood_group.setText(teacherListModelposition.getBlood_group());
-        holder.email_id.setText(teacherListModelposition.getEmail_id());
-        holder.teacher_mobile.setText(teacherListModelposition.getTeacher_mobile());
+        holder.email_id.setText(" "+teacherListModelposition.getEmail_id());
+        holder.teacher_mobile.setText(" "+teacherListModelposition.getTeacher_mobile());
+
+        date= teacherListModelposition.getDob();
         holder.dob.setText(teacherListModelposition.getDob());
+
+        SimpleDateFormat sdf = new SimpleDateFormat("dd.M.yyyy");
+         date = sdf.format(new Date());
+        holder.dob.setText(date);
     }
 
     @Override

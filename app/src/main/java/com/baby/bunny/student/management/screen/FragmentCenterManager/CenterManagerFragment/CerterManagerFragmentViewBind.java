@@ -11,7 +11,7 @@ public class CerterManagerFragmentViewBind extends DeviceResolution {
     CerterManagerFragment certerManagerFragment;
     View view;
 
-    LinearLayout lvidstudents,lvidteachers,classlvid;
+    LinearLayout lvidstudents,lvidteachers,classlvid,lvidholidaylist,lvstudentsfeesid,lvidFeedbacklist,lvidtoday,lvidhometask;
 
 
     public CerterManagerFragmentViewBind( CerterManagerFragment certerManagerFragment, View view) {
@@ -33,7 +33,11 @@ public class CerterManagerFragmentViewBind extends DeviceResolution {
         lvidstudents=view.findViewById(R.id.lvidstudents);
         lvidteachers=view.findViewById(R.id.lvidteachers);
         classlvid=view.findViewById(R.id.classlvid);
-
+        lvidholidaylist=view.findViewById(R.id.lvidholidaylist);
+        lvstudentsfeesid=view.findViewById(R.id.lvstudentsfeesid);
+        lvidhometask=view.findViewById(R.id.lvidhometask);
+        lvidFeedbacklist=view.findViewById(R.id.lvidFeedbacklist);
+        lvidtoday=view.findViewById(R.id.lvidtoday);
     }
 }
 

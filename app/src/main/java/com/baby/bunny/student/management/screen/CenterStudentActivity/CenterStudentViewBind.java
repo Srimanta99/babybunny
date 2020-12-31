@@ -1,6 +1,7 @@
 package com.baby.bunny.student.management.screen.CenterStudentActivity;
 
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -13,6 +14,7 @@ public class CenterStudentViewBind extends DeviceResolution {
     CenterStudentActivity centerStudentActivity;
     View view;
    RecyclerView studentrv;
+   ImageView back_icon;
 
     public CenterStudentViewBind(CenterStudentActivity centerStudentActivity, View view) {
         super(centerStudentActivity);
@@ -31,7 +33,7 @@ public class CenterStudentViewBind extends DeviceResolution {
     // for findview
     private void initviewBind() {
         studentrv=view.findViewById(R.id.studentrv);
-
+        back_icon=view.findViewById(R.id.back_icon);
         // btn_hello_wrold=view.findViewById(R.id.btn_hello_wrold) ;
     }
 }

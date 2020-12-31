@@ -14,6 +14,8 @@ import com.baby.bunny.student.management.R;
 import com.baby.bunny.student.management.model.StudentsListModel;
 import com.bumptech.glide.Glide;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -22,6 +24,7 @@ public class StudentListAdapter extends RecyclerView.Adapter<StudentListAdapter.
     LayoutInflater layoutInflater;
     Context context;
     List<StudentsListModel> studentsListModels;
+    String date;
 
     public StudentListAdapter(Context context, List<StudentsListModel> studentsListModels) {
         this.context = context;
@@ -41,15 +44,28 @@ public class StudentListAdapter extends RecyclerView.Adapter<StudentListAdapter.
     public void onBindViewHolder(@NonNull StudentListViewHolder holder, int position) {
       StudentsListModel studentsListModelposition=studentsListModels.get(position);
 
-
         holder.student_name.setText(studentsListModelposition.getStudent_name());
-        holder.student_id.setText(studentsListModelposition.getStudent_id());
-        holder.guardian_name.setText(studentsListModelposition.getGuardian_name());
+        holder.student_id.setText("("+studentsListModelposition.getStudent_id()+")");
+
+        studentsListModelposition.getGuardian_name();
+
+        if (studentsListModelposition.getGuardian_name().equalsIgnoreCase("null")){
+            holder.guardian_name.setText("");
+        }else {
+            holder.guardian_name.setText(studentsListModelposition.getGuardian_name());
+        }
+
+
         holder.email_id.setText(studentsListModelposition.getEmail_id());
         holder.mobile_no.setText(studentsListModelposition.getMobile_no());
         holder.class_name.setText(studentsListModelposition.getClass_name());
         holder.blood_group.setText(studentsListModelposition.getBlood_group());
+        date= studentsListModelposition.getDob();
         holder.dob.setText(studentsListModelposition.getDob());
+
+        SimpleDateFormat sdf = new SimpleDateFormat("dd.M.yyyy");
+        date = sdf.format(new Date());
+        holder.dob.setText(date);
     }
 
     @Override

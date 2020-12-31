@@ -40,7 +40,7 @@ public class ClassListAdapter extends RecyclerView.Adapter<ClassListAdapter.Clas
 
 
         holder.class_name.setText(classListModelposition.getClass_name());
-        holder.admission_fees.setText(classListModelposition.getAdmission_fees());
+        holder.admission_fees.setText("\u20B9"+classListModelposition.getAdmission_fees());
         holder.monthly_fees.setText(classListModelposition.getMonthly_fees());
 
     }

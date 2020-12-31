@@ -14,7 +14,7 @@ public class SessionManager {
         editor = preferences.edit();
     }
 
-    public static void clearSessionManager(){
+   /* public static void clearSessionManager(){
         editor.clear().apply();
 
     }
@@ -40,7 +40,7 @@ public class SessionManager {
 
     public static String gettoken() {
         return preferences.getString("token", "");
-    }
+    }*/
 
 
 
@@ -56,16 +56,21 @@ public class SessionManager {
     }
 
 
-    public static void setotpenable(boolean is) {
-        editor.putBoolean("otp", is);
+    public static void setCenterManagerLogged(boolean is) {
+        editor.putBoolean("CenterManagelogin", is);
         editor.apply();
     }
 
 
-    public static boolean getotpenable() {
-        return preferences.getBoolean("otp", false);
+    public static boolean isCenterManageLogged() {
+        return preferences.getBoolean("CenterManagelogin", false);
     }
 
+
+    public static void setotpenable(boolean is) {
+        editor.putBoolean("otp", is);
+        editor.apply();
+    }
 
     public static void setotp(String is) {
         editor.putString("otp", is);
@@ -76,6 +81,22 @@ public class SessionManager {
     public static String getotp() {
         return preferences.getString("otp", "");
     }
+
+    public static void setCenterManagerotpenable(boolean is) {
+        editor.putBoolean("CenterManagerotp", is);
+        editor.apply();
+    }
+
+    public static void setCenterManagerotp(String is) {
+        editor.putString("CenterManagerotp", is);
+        editor.apply();
+    }
+
+
+    public static String getCenterManagerotp() {
+        return preferences.getString("CenterManagerotp", "");
+    }
+
 
 
 
@@ -98,6 +119,27 @@ public class SessionManager {
     }
     public  static String getidvalue(){
         return preferences.getString("id","");
+    }
+
+
+
+    public static void setCenterManageridboolean(boolean is) {
+        editor.putBoolean("CenterManagerMyPREFERENCES", is);
+        editor.apply();
+    }
+
+
+    public static boolean getCenterManageridboolean() {
+        return preferences.getBoolean("CenterManagerMyPREFERENCES", false);
+    }
+
+
+    public static void setCenterManageridvalue(String id){
+        editor.putString("CenterManagerid", id);
+        editor.apply();
+    }
+    public  static String getCenterManageridvalue(){
+        return preferences.getString("CenterManagerid","");
     }
 
     public static void setnamevalue(String name){

@@ -10,7 +10,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15sp"
         android:layout_marginRight="15sp"
-        android:layout_marginTop="15sp">
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,10 +52,11 @@
                     android:layout_weight="1"
                     android:orientation="vertical"
                     >
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="15dp"></LinearLayout>
 
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -67,6 +69,7 @@
                             android:textColor="#2C274F"
                             android:textSize="16sp"
                             android:fontFamily="@font/rockfont"
+                            android:layout_marginTop="@dimen/_12sdp"
                             >
 
                         </TextView>
@@ -83,6 +86,28 @@
                         </TextView>
                     </LinearLayout>
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_20sdp"
+                            android:gravity="right"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginRight="@dimen/_10sdp">
+                            >
+                            <LinearLayout
+                                android:layout_width="@dimen/_8sdp"
+                                android:layout_height="@dimen/_8sdp"
+                                android:background="@drawable/green_capsul_bg"
+                                android:paddingBottom="@dimen/_2sdp"
+                               >
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

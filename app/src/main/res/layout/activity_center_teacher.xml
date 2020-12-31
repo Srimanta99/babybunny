@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".screen.CenterStudentActivity.CenterStudentActivity"
     android:background="@drawable/loginasbg"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="right"
+    android:id="@+id/drawer_layout"
+    >
 
-    <LinearLayout
+  <!--  <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:elevation="@dimen/_15sdp"
@@ -56,9 +60,60 @@
 
     </LinearLayout>
 
+
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/teacherrv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+        android:layout_height="wrap_content">
 
-</LinearLayout>
+    </androidx.recyclerview.widget.RecyclerView>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/teacherlist_rv"></include>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:id="@+id/img_navclose"
+            android:layout_marginTop="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/searchwithbg"
+            android:layout_alignParentRight="true"
+            ></ImageView>
+
+
+
+
+        <com.google.android.material.navigation.NavigationView
+
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:fitsSystemWindows="true">
+            <include layout="@layout/nav_header_main"/>
+        </com.google.android.material.navigation.NavigationView>
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

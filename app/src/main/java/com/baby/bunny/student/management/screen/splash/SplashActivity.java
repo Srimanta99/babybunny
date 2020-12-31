@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.baby.bunny.student.management.R;
+import com.baby.bunny.student.management.screen.CenterManagerHomeActivity.CenterManagerHomeActivity;
 import com.baby.bunny.student.management.screen.StudentHomeActivity.StudentHomeActivity;
 import com.baby.bunny.student.management.screen.main.MainActivity;
 import com.baby.bunny.student.management.utils.ApplicationConstant;
@@ -22,7 +23,7 @@ import com.baby.bunny.student.management.utils.SessionManager;
 
 public class SplashActivity extends AppCompatActivity {
     SharedPreferences sharedpreferences;
-    boolean savelogin;
+    boolean savelogin,saveCenterManagerlogin;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +32,7 @@ public class SplashActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         savelogin= SessionManager.isLogged();
+        saveCenterManagerlogin=SessionManager.isCenterManageLogged();
 
         View view= LayoutInflater.from(this).inflate(R.layout.activity_splash,null);
         setContentView(view);
@@ -43,9 +45,21 @@ public class SplashActivity extends AppCompatActivity {
                     startActivity(intent);
                     finish();
 
-                }else {
+                }else   if (savelogin){
 
                     Intent intent = new Intent(SplashActivity.this, StudentHomeActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+
+
+              else   if (!saveCenterManagerlogin){
+                    Intent intent=new Intent(SplashActivity.this, MainActivity.class);
+                    startActivity(intent);
+                    finish();
+
+                }else {
+                    Intent intent = new Intent(SplashActivity.this, CenterManagerHomeActivity.class);
                     startActivity(intent);
                     finish();
                 }

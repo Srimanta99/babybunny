@@ -5,8 +5,13 @@ import android.view.View;
 
 import com.baby.bunny.student.management.R;
 import com.baby.bunny.student.management.screen.CenterClassActivity.CenterClassActivity;
+import com.baby.bunny.student.management.screen.CenterFeedbacklistActivity.CenterFeedbacklistActivity;
+import com.baby.bunny.student.management.screen.CenterHolidayListActivity.CenterHolidayListActivity;
+import com.baby.bunny.student.management.screen.CenterHomeTaskActivity.CenterHomeTaskActivity;
 import com.baby.bunny.student.management.screen.CenterStudentActivity.CenterStudentActivity;
+import com.baby.bunny.student.management.screen.CenterStudentsFeesActivity.CenterStudentsFeesActivity;
 import com.baby.bunny.student.management.screen.CenterTeacherActivity.CenterTeacherActivity;
+import com.baby.bunny.student.management.screen.CenterTodayActivity.CenterTodayActivity;
 import com.baby.bunny.student.management.screen.Fragment.ParentsZone.ParentZoneViewBind;
 import com.baby.bunny.student.management.screen.Fragment.ParentsZone.ParentsZoneFragment;
 import com.baby.bunny.student.management.screen.StudentAttendanceActivity.StudentAttendanceActivity;
@@ -32,6 +37,11 @@ public class CerterManagerFragmentOnClick implements View.OnClickListener{
         certerManagerFragmentViewBind.lvidstudents.setOnClickListener(this);
         certerManagerFragmentViewBind.lvidteachers.setOnClickListener(this);
         certerManagerFragmentViewBind.classlvid.setOnClickListener(this);
+        certerManagerFragmentViewBind.lvidholidaylist.setOnClickListener(this);
+        certerManagerFragmentViewBind.lvstudentsfeesid.setOnClickListener(this);
+        certerManagerFragmentViewBind.lvidFeedbacklist.setOnClickListener(this);
+        certerManagerFragmentViewBind.lvidhometask.setOnClickListener(this);
+        certerManagerFragmentViewBind.lvidtoday.setOnClickListener(this);
 
     }
 
@@ -59,6 +69,35 @@ public class CerterManagerFragmentOnClick implements View.OnClickListener{
 
 
                 Intent intent=new Intent(certerManagerFragment.getContext(), CenterClassActivity.class);
+                certerManagerFragment.startActivity(intent);
+            }
+            break;
+
+            case R.id.lvidholidaylist:{
+                Intent intent=new Intent(certerManagerFragment.getContext(), CenterHolidayListActivity.class);
+                certerManagerFragment.startActivity(intent);
+            }
+            break;
+
+            case R.id.lvstudentsfeesid :{
+                Intent intent=new Intent(certerManagerFragment.getContext(), CenterStudentsFeesActivity.class);
+                certerManagerFragment.startActivity(intent);
+            }
+            break;
+            case R.id.lvidhometask :{
+                Intent intent=new Intent(certerManagerFragment.getContext(), CenterHomeTaskActivity.class);
+                certerManagerFragment.startActivity(intent);
+            }
+            break;
+
+            case R.id.lvidtoday :{
+                Intent intent=new Intent(certerManagerFragment.getContext(), CenterTodayActivity.class);
+                certerManagerFragment.startActivity(intent);
+            }
+            break;
+
+            case R.id.lvidFeedbacklist :{
+                Intent intent=new Intent(certerManagerFragment.getContext(), CenterFeedbacklistActivity.class);
                 certerManagerFragment.startActivity(intent);
             }
             break;

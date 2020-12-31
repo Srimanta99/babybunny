@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ProgressBar;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -20,6 +21,10 @@ import com.baby.bunny.student.management.model.StudentsListModel;
 import com.baby.bunny.student.management.screen.main.MainActivityOnClick;
 import com.baby.bunny.student.management.screen.main.MainActivityViewBind;
 import com.baby.bunny.student.management.utils.ApplicationConstant;
+import com.github.ybq.android.spinkit.sprite.Sprite;
+import com.github.ybq.android.spinkit.style.Circle;
+import com.github.ybq.android.spinkit.style.DoubleBounce;
+import com.github.ybq.android.spinkit.style.FadingCircle;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -54,14 +59,21 @@ public class CenterStudentActivity extends AppCompatActivity {
     }
 
     public  void getAllStudent(){
+        ProgressBar progressBar = (ProgressBar)findViewById(R.id.progress);
+        Sprite doubleBounce = new FadingCircle();
+        progressBar.setIndeterminateDrawable(doubleBounce);
 
         StringRequest stringRequest=new StringRequest(Request.Method.POST, ApplicationConstant.CenterManager_getAllStudent, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Log.d("sunita", "onResponse: "+response);
+                progressBar.setVisibility(View.GONE);
+
 
                 try {
                     JSONObject jsonObject=new JSONObject(response);
+
+
                     JSONArray jsonArray=jsonObject.getJSONArray("data");
                     for (int i=0;i<jsonArray.length();i++){
 
@@ -76,7 +88,8 @@ public class CenterStudentActivity extends AppCompatActivity {
                                 jsonObject1.getString("mobile_no"),
                                 jsonObject1.getString("class_name"),
                                 jsonObject1.getString("blood_group"),
-                                jsonObject1.getString("dob")
+                                jsonObject1.getString("dob"),
+                                jsonObject1.getString("id")
                         );
                         studentsListModelList.add(studentsListModel);
 
@@ -106,5 +119,14 @@ public class CenterStudentActivity extends AppCompatActivity {
             }
         };
         Volley.newRequestQueue(this).add(stringRequest);
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (getFragmentManager().getBackStackEntryCount() > 0) {
+            getFragmentManager().popBackStack();
+        } else {
+            super.onBackPressed();
+        }
     }
 }

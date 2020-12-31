@@ -25,7 +25,7 @@ public class CenterManagerHomeActivity extends AppCompatActivity {
         centerManagerHomeViewBind= new CenterManagerHomeViewBind(this,view);
         centerManagerHomeOnClick=new CenterManagerHomeOnClick(this,centerManagerHomeViewBind);
 
-
+        otp = getIntent().getStringExtra("otp");
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragmentid, new CerterManagerFragment()).commit();

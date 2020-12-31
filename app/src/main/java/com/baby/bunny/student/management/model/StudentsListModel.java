@@ -1,9 +1,10 @@
 package com.baby.bunny.student.management.model;
 
 public class StudentsListModel {
-    String student_image,student_name,student_id,guardian_name,email_id,mobile_no,class_name,blood_group,dob;
+    String student_image,student_name,student_id,guardian_name,email_id,mobile_no,class_name,blood_group,dob,id;
+    Boolean ischceked=false;
 
-    public StudentsListModel(String student_image, String student_name, String student_id, String guardian_name, String email_id, String mobile_no, String class_name, String blood_group, String dob) {
+    public StudentsListModel(String student_image, String student_name, String student_id, String guardian_name, String email_id, String mobile_no, String class_name, String blood_group, String dob, String id) {
         this.student_image = student_image;
         this.student_name = student_name;
         this.student_id = student_id;
@@ -13,6 +14,23 @@ public class StudentsListModel {
         this.class_name = class_name;
         this.blood_group = blood_group;
         this.dob = dob;
+        this.id = id;
+    }
+
+    public Boolean getIschceked() {
+        return ischceked;
+    }
+
+    public void setIschceked(Boolean ischceked) {
+        this.ischceked = ischceked;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getStudent_image() {

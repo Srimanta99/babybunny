@@ -21,6 +21,7 @@ import com.android.volley.toolbox.Volley;
 import com.baby.bunny.student.management.R;
 import com.baby.bunny.student.management.utils.ApplicationConstant;
 import com.baby.bunny.student.management.utils.SessionManager;
+import com.rts.commonutils_2_0.netconnection.ConnectionDetector;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -49,6 +50,7 @@ public class StudentOTPActivity extends AppCompatActivity {
 
         loadotp();
         setupOtpLayout();
+
 
 
     }

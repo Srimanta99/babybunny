@@ -20,21 +20,19 @@ public class CenterStudentOnClick implements View.OnClickListener{
     }
     // set click listner.
     private void setonclicklistner() {
-      //  mainActivityViewBind.studentlvid.setOnClickListener(this);
+        centerStudentViewBind.back_icon.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-        /*    case R.id.studentlvid:{
+            case R.id.back_icon:{
                 // Toast.makeText(mainActivity,"hello",Toast.LENGTH_LONG).show();
-                Intent mainIntent = new Intent(mainActivity, StudentLoginActivity.class);
-                mainActivity.startActivity(mainIntent);
-                //  mainActivity.finish();
+                centerStudentActivity.onBackPressed();
+
             }
             break;
-*/
 
         }
     }

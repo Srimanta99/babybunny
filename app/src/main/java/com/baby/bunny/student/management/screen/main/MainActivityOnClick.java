@@ -5,6 +5,7 @@ import android.view.View;
 
 import com.baby.bunny.student.management.R;
 import com.baby.bunny.student.management.screen.CenterManagerHomeActivity.CenterManagerHomeActivity;
+import com.baby.bunny.student.management.screen.CenterManagerLoginActivity.CenterManagerLoginActivity;
 import com.baby.bunny.student.management.screen.StudentLoginActivity.StudentLoginActivity;
 
 public class MainActivityOnClick implements View.OnClickListener{
@@ -36,7 +37,7 @@ public class MainActivityOnClick implements View.OnClickListener{
 
             case R.id.lvcentermanagerid:{
                 // Toast.makeText(mainActivity,"hello",Toast.LENGTH_LONG).show();
-                Intent mainIntent = new Intent(mainActivity, CenterManagerHomeActivity.class);
+                Intent mainIntent = new Intent(mainActivity, CenterManagerLoginActivity.class);
                 mainActivity.startActivity(mainIntent);
                 //  mainActivity.finish();
             }

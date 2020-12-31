@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ProgressBar;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -23,6 +24,8 @@ import com.baby.bunny.student.management.screen.CenterStudentActivity.CenterStud
 import com.baby.bunny.student.management.screen.CenterStudentActivity.CenterStudentOnClick;
 import com.baby.bunny.student.management.screen.CenterStudentActivity.CenterStudentViewBind;
 import com.baby.bunny.student.management.utils.ApplicationConstant;
+import com.github.ybq.android.spinkit.sprite.Sprite;
+import com.github.ybq.android.spinkit.style.FadingCircle;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -54,11 +57,17 @@ public class CenterClassActivity extends AppCompatActivity {
         getAllClass();
     }
     public  void getAllClass(){
+        ProgressBar progressBar = (ProgressBar)findViewById(R.id.progress);
+        Sprite doubleBounce = new FadingCircle();
+
+        progressBar.setIndeterminateDrawable(doubleBounce);
 
         StringRequest stringRequest=new StringRequest(Request.Method.POST, ApplicationConstant.CenterManager_getAllClass, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Log.d("sunita", "onResponse: "+response);
+                progressBar.setVisibility(View.GONE);
+
 
                 try {
                     JSONObject jsonObject=new JSONObject(response);
@@ -101,5 +110,14 @@ public class CenterClassActivity extends AppCompatActivity {
             }
         };
         Volley.newRequestQueue(this).add(stringRequest);
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (getFragmentManager().getBackStackEntryCount() > 0) {
+            getFragmentManager().popBackStack();
+        } else {
+            super.onBackPressed();
+        }
     }
 }
