@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginasbg"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20sdp"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lvidattendance"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/div1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@drawable/icon1"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_40sdp"
+                        >
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Attendance"
+                        android:fontFamily="@font/rockfont"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lvidfeesbook"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/div2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@drawable/icon2"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_40sdp"
+                        >
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Fees Book"
+                        android:fontFamily="@font/rockfont"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        >
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/div3"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@drawable/icon3"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_40sdp"
+                        >
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Report Card"
+                        android:fontFamily="@font/rockfont"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lvidholidaylist"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/div4"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@drawable/icon4"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_40sdp"
+                        >
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Holiday List"
+                        android:fontFamily="@font/rockfont"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        >
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lvidquery"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/div5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@drawable/icon5"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_40sdp"
+                        >
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Query"
+                        android:fontFamily="@font/rockfont"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lvidTodaysClass"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/div6"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@drawable/icon6"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        >
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Today's Class"
+                        android:fontFamily="@font/rockfont"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        >
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lvidreview"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/div7"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@drawable/a"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_40sdp"
+                        >
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Review"
+                        android:fontFamily="@font/rockfont"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lvidCompanyAchievment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/div8"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@drawable/company"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        >
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Company's\nAchievments"
+                        android:fontFamily="@font/rockfont"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        >
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lvupcomingeventsid"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/div9"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@drawable/upcomingevents"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_40sdp"
+                        >
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Upcoming\nEvents"
+                        android:fontFamily="@font/rockfont"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/div10"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@drawable/todaysinnovation"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        >
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Today's\nInnovation"
+                        android:fontFamily="@font/rockfont"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        >
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/div11"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@drawable/hometask"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_40sdp"
+                        >
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Home Task"
+                        android:fontFamily="@font/rockfont"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/div12"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@drawable/feedbacklist"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        >
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Feedback List"
+                        android:fontFamily="@font/rockfont"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        >
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

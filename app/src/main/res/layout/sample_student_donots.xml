@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <LinearLayout
+        android:id="@+id/expandeblelvid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/testbg"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        >
+
+
+        <TextView
+            android:id="@+id/testtvid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Test     "
+            android:textColor="@color/text_color_blue"
+            android:gravity="center"
+            android:fontFamily="@font/cerebrisansprobold"
+            android:textSize="@dimen/_13sdp"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

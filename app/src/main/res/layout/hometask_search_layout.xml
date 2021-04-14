@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:overScrollMode="never"
+    android:layout_marginTop="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:fitsSystemWindows="true"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="@dimen/_20sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/search"
+                android:layout_marginLeft="9dp"
+                >
+
+            </ImageView>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:text="Search"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/rockfont"
+                    android:textSize="17sp"
+                    android:imeOptions="actionDone"
+                    android:gravity="center|left"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/_9sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:lines="1"
+                    >
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinnerstyle"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_18sdp"
+        >
+        <Spinner
+            android:id="@+id/select_class_spinnerid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:popupBackground="@drawable/blue_outline_white_background"
+            android:spinnerMode="dropdown"
+            >
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_marginRight="@dimen/_20sdp"
+        >
+        <LinearLayout
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/redcapsulshapebutton"
+            >
+
+            <TextView
+                android:id="@+id/tvSearchid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/rockfont"
+                android:gravity="center"
+                android:text="Search"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+
+                android:textStyle="normal">
+
+            </TextView>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="gone"
+                android:indeterminateDrawable="@drawable/progress_bg"
+                >
+
+            </ProgressBar>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+

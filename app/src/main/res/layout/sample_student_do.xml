@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:layout_marginRight="@dimen/_15sdp"
+    android:layout_marginLeft="@dimen/_15sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/testbg"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/datebg"
+            >
+
+            <TextView
+                android:id="@+id/datetvid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Sat,26th sep,2020"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:fontFamily="@font/cerebrisansprobold"
+                android:textSize="@dimen/_13sdp"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/expandeblervid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/testbg">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

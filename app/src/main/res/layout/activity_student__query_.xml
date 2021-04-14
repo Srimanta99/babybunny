@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/loginasbg"
+    >
+
+
+<include
+    layout="@layout/toolbar_with_backbutton"
+    ></include>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/capsuleshape"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_30sdp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit your query"
+            android:fontFamily="@font/rockfont"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            >
+
+        </TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/asscolor_round"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/holidaysubject"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:padding="@dimen/_5sdp"
+                    >
+
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Subject"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/rockfont"
+                        android:textSize="@dimen/_12sdp"
+                        android:imeOptions="actionDone"
+                        android:gravity="center|left"
+                        android:layout_gravity="center"
+                        android:paddingLeft="@dimen/_9sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:lines="1"
+                        >
+                    </EditText>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_25sdp"
+            android:elevation="@dimen/_15sdp"
+            app:cardMaxElevation="@dimen/_10sdp"
+            android:background="@drawable/asscolor_round"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:cardBackgroundColor="#f1f0f6"
+            android:layout_marginBottom="@dimen/_25sdp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_2sdp"
+
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/holidayquery"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_gravity="top"
+
+                    >
+
+                </ImageView>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="Query"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/rockfont"
+                        android:textSize="@dimen/_12sdp"
+                        android:paddingLeft="@dimen/_9sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_15sdp"
+                        android:inputType="textMultiLine"
+                        android:lines="5"
+                        android:minLines="5"
+                        android:gravity="top|left"
+
+                        android:maxLines="10"
+                        android:scrollbars="vertical"
+                        >
+
+                    </EditText>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+<include
+    layout="@layout/submit_btn_layout"
+    ></include>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/bglvid"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/barred"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/holyday_details"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Good Friday"
+            android:fontFamily="@font/cerebrisansprobold"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/holyday_from"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tue,14thApr\n2020      "
+            android:fontFamily="@font/cerebrisansprobold"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:layout_gravity="right|center"
+            android:gravity="right|center"
+            android:layout_marginRight="20dp"
+            >
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

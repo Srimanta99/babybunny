@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/loginasbg"
+    tools:context=".screen.CenterAddStudentFeesActivity.CenterAddStudentFeesActivity">
+
+    <include
+        layout="@layout/toolbar_with_backbutton"
+        ></include>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/capsuleshape"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:orientation="vertical">
+
+
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinnerstyle"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            >
+            <Spinner
+                android:id="@+id/select_class_spinnerid"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:popupBackground="@drawable/blue_outline_white_background"
+
+                android:spinnerMode="dropdown"
+                >
+            </Spinner>
+        </LinearLayout>
+-->
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Students"
+            android:fontFamily="@font/rockfont"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_20sdp">
+
+        </TextView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_round"
+            android:layout_marginRight="@dimen/_18sdp"
+            android:layout_marginLeft="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/select_student_rv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/progressid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:gravity="center"
+            >
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/progre"
+                style="@style/SpinKitView.Circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:SpinKit_Color="@color/SpinKit_Color" />
+
+        </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinnerstyle"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            >
+            <Spinner
+                android:id="@+id/select_type_spinnerid"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:popupBackground="@drawable/blue_outline_white_background"
+
+                >
+            </Spinner>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/asscolor_round"
+            android:layout_marginRight="@dimen/_18sdp"
+            android:layout_marginLeft="@dimen/_18sdp">
+
+
+                    <EditText
+                        android:id="@+id/Amountet"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Amount"
+                        android:textStyle="normal"
+                        android:fontFamily="@font/rockfont"
+                        android:textSize="@dimen/_12sdp"
+                        android:imeOptions="actionDone"
+                        android:gravity="center|left"
+                        android:layout_gravity="center"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:lines="1"
+                        >
+                    </EditText>
+
+
+            </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_18sdp"
+            android:layout_marginLeft="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            >
+            <TextView
+                android:id="@+id/tvsubmmitid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/submit"
+                android:fontFamily="@font/rockfont"
+                android:background="@drawable/redcapsulshapebutton"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="normal"
+                >
+
+            </TextView>
+        </RelativeLayout>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.BlogsActivity.BlogsActivity"
+    android:orientation="vertical"
+    android:background="@drawable/loginasbg"
+    >
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/toolbar_with_backbutton"
+                ></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp">
+
+
+            <LinearLayout
+                android:id="@+id/lvpreschoolid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="255"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_10sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/blogsbannerone"
+                        android:scaleType="fitXY"
+                        >
+
+                    </ImageView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@drawable/halfwhitebg"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Why Preschool is so important"
+                        android:textColor="@color/text_color_blue"
+                        android:fontFamily="@font/rockfont"
+                        android:layout_marginTop="10dp"
+                       android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        >
+
+                    </TextView>
+
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/_2sdp"
+                      android:background="@drawable/bluecapsulshapebutton"
+                      android:layout_marginRight="@dimen/_95sdp"
+                      android:layout_marginLeft="@dimen/_95sdp"
+                      android:layout_marginTop="10dp"
+                      >
+
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Read more"
+                          android:textColor="@color/white"
+                          android:fontFamily="@font/rockfont"
+                        android:layout_gravity="center"
+                          android:gravity="center"
+                          >
+
+                      </TextView>
+                  </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="255"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_10sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/blogsbannertwo"
+                        android:scaleType="fitXY"
+                        >
+
+                    </ImageView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@drawable/halfwhitebg"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Building sharing habits in your kids"
+                        android:textColor="@color/text_color_blue"
+                        android:fontFamily="@font/rockfont"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        >
+
+                    </TextView>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_2sdp"
+                        android:background="@drawable/bluecapsulshapebutton"
+                        android:layout_marginRight="@dimen/_95sdp"
+                        android:layout_marginLeft="@dimen/_95sdp"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Read more"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/rockfont"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+
+                        </TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="255"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_10sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/blogbannerthree"
+                        android:scaleType="fitXY"
+                        >
+
+                    </ImageView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@drawable/halfwhitebg"
+                    android:orientation="vertical"
+                    >
+
+                  <!--  <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Why Preschool is so important"
+                        android:textColor="#2C274F"
+                        android:fontFamily="@font/rockfont"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        >
+
+                    </TextView>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_2sdp"
+                        android:background="@drawable/bluecapsulshapebutton"
+                        android:layout_marginRight="@dimen/_95sdp"
+                        android:layout_marginLeft="@dimen/_95sdp"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Read more"
+                            android:textColor="#fff"
+                            android:fontFamily="@font/rockfont"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+
+                        </TextView>
+                    </LinearLayout>
+-->
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
